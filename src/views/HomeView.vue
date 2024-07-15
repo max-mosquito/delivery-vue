@@ -35,7 +35,7 @@
                 </div>
                 <div class="products-card__descr-row2">
                   <div class="products-card__descr-row2--rating">
-                    <img src="../assets/img//star.svg" alt="star">
+                    <img src="./assets/img//star.svg" alt="star">
                     {{rest.rating}}
                   </div>
                   <div class="products-card__descr-row2--price">От {{rest.price}} ₽</div>
