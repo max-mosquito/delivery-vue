@@ -23,7 +23,7 @@
               :to="`rest?id=${rest.id}`" 
             >
               <div class="products-card__pic">
-                <img :src="`src/assets/img//rests/${rest.image}`" alt="">
+                <img :src="`../assets/img//rests/${rest.image}`" alt="">
                 <!-- <img :src="getUrl(rest.image)" alt=""> -->
               </div>
               <div class="products-card__descr">
