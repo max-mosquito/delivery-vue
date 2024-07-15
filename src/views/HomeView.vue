@@ -23,9 +23,7 @@
               :to="`rest?id=${rest.id}`" 
             >
               <div class="products-card__pic">
-                <!-- <img :src="`./assets/${rest.image}`" alt=""> -->
-                <!-- <img :src="`../assets/img//rests/${rest.image}`" alt=""> -->
-                <img :src="getUrl(rest.image)" alt="">
+                <img :src="getUrl(rest.image)" alt="rest-1" />
               </div>
               <div class="products-card__descr">
                 <div class="products-card__descr-row">
@@ -52,6 +50,10 @@
 </template>
 
 <script setup>
+const getUrl = (name) => {
+  return new URL(`../assets/images/rests/${name}`, import.meta.url)
+}
+
   const restArr = [
     {
       id: 0,
@@ -109,11 +111,4 @@
     },
   ]
 
-  const getUrl = (name) => {
-    // return `../assets/img//rests/r1.jpg`
-  // return new URL(`../assets/img//rests/r1.jpg`, import.meta.url)
-  return new URL(`../assets/img//rests/${name}`, import.meta.url)
-  // console.log(name);
-  // console.log(new URL(`../assets/img//rests/${name}`, import.meta.url));
-  }
 </script>
