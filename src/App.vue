@@ -10,7 +10,7 @@ import { ref } from 'vue';
 <template>
   <div class="page-wrapper">
     
-    <Header @toffleModal="isOpen = !isOpen"></Header>
+    <Header @toggleModal="isOpen = !isOpen"></Header>
 
     <main class="main">
       <router-view></router-view>
@@ -18,7 +18,7 @@ import { ref } from 'vue';
     
     <Footer></Footer>
 
-    <Modal :isOpen="isOpen" @toffleModal="isOpen = !isOpen"></Modal>
+    <Modal :isOpen="isOpen" @toggleModal="isOpen = !isOpen"></Modal>
     
   </div>
 </template>

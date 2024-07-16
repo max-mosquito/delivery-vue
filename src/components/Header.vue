@@ -19,8 +19,8 @@
 </template>
 
 <script setup>
-  const emit = defineEmits(['toffleModal'])
-  const opemModal = () => emit('toffleModal')
+  const emit = defineEmits(['toggleModal'])
+  const opemModal = () => emit('toggleModal')
 </script>
 
 <style scoped>

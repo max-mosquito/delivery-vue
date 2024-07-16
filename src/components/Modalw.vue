@@ -54,8 +54,8 @@
 
 <script setup>
   const {isOpen} = defineProps({isOpen: Boolean})
-  const emit = defineEmits(['toffleModal'])
-  const closeModal = () => emit('toffleModal')
+  const emit = defineEmits(['toggleModal'])
+  const closeModal = () => emit('toggleModal')
 </script>
 
 <style scoped>

@@ -51,7 +51,7 @@
 
 <script setup>
 const getUrl = (name) => {
-  return new URL(`../assets/img/rests/${name}`, import.meta.url)
+  return new URL(`../assets/images/rests/${name}`, import.meta.url)
 }
 
   const restArr = [
